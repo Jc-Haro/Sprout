@@ -6,8 +6,7 @@ public class TangleSpawner : MonoBehaviour
 {
     public GameObject projectile;
     [SerializeField] private float shootCadency;
-    [SerializeField] private float xOffset = -6;
-    [SerializeField] private float yOffset = -6;
+    [SerializeField] private float shootStart;
     [SerializeField] private float minX;
     [SerializeField] private float maxX;
     [SerializeField] private float minY;
@@ -15,7 +14,7 @@ public class TangleSpawner : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("SpwanTangleProjectile", 2, shootCadency);
+        InvokeRepeating("SpwanTangleProjectile", shootStart, shootCadency);
     }
 
 
