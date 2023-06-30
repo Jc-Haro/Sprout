@@ -16,6 +16,8 @@ public class FungusProjectile : MonoBehaviour
 
     [SerializeField] private float fallSpeed;
 
+    bool hasShoot = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,11 +34,12 @@ public class FungusProjectile : MonoBehaviour
             transform.position = newPos; ;
         }
         //change to ontrigerrenter2d
-        if (Input.GetKeyDown(KeyCode.Q)) //collision.CompareTag("PlayerProjectile") && actualPhase != 0)
+        if (Input.GetKeyDown(KeyCode.Q) && actualPhase != 0 && !hasShoot) //collision.CompareTag("PlayerProjectile") && actualPhase != 0)
         {
-            bulletSpawn.samples = actualPhase;
+            hasShoot = true;
             bulletSpawn.numberOfRounds = actualPhase;
             bulletSpawn.GenerateBullets();
+            
         }
     }
 
@@ -78,10 +81,12 @@ public class FungusProjectile : MonoBehaviour
         }
         else
         {
-            actualPhase++;
-            bulletSpawn.samples = actualPhase;
-            bulletSpawn.numberOfRounds = actualPhase;
-            bulletSpawn.GenerateBullets();
+            if (!hasShoot)
+            {
+                bulletSpawn.numberOfRounds = actualPhase;
+                bulletSpawn.GenerateBullets();
+            }
+            
             
         }
     }

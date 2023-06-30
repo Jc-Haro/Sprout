@@ -5,7 +5,7 @@ using UnityEngine;
 public class GenerateShoots : MonoBehaviour
 {
 
-    public int samples;
+    [SerializeField] private int samples = 3;
     [SerializeField] private float yRadius = 1;
     [SerializeField] private float xRadius = 1;
     [SerializeField] private float circumference = 1;
@@ -67,4 +67,6 @@ public class GenerateShoots : MonoBehaviour
         }
 
     }
+
+    
 }

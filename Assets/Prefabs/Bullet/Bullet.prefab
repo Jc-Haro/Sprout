@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2511248650324108340}
   - component: {fileID: 2511248650324108337}
   - component: {fileID: 2511248650324108342}
+  - component: {fileID: 2288949756217360194}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2511248650324108341}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.046137374, g: 0.764151, b: 0.3059369, a: 1}
+  m_Color: {r: 0.7647059, g: 0.04705882, b: 0.082534775, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -123,3 +124,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2288949756217360194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2511248650324108341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d53cd05cbcc2cd6409a4891ce2a2628d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxX: 19
+  minX: -12
+  maxY: 12
+  minY: -7
