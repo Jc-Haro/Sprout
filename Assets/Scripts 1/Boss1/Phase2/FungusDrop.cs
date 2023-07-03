@@ -32,11 +32,11 @@ public class FungusDrop : MonoBehaviour
         {
             Instantiate(fungusProjectile, transform.position, transform.rotation);
             isFungusOnCooldown = true;
-            StartCoroutine(fungusCooldown());
+            StartCoroutine(FungusCooldown());
         }
     }
 
-    IEnumerator fungusCooldown()
+    IEnumerator FungusCooldown()
     {
         yield return new WaitForSeconds(shootDelay);
         if (shootDelay > maxShootSpeed)

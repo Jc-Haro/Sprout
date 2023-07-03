@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1396912418454867420}
   m_Layer: 0
   m_Name: FungusContainer
-  m_TagString: Untagged
+  m_TagString: Fungus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,11 +96,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ef1a8a47ad9f84fbc6fd94046cf57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  samples: 0
+  samples: 3
   yRadius: 0.1
   xRadius: 0.1
-  circumference: -2.3561945
-  offset: 0.7853982
+  circumference: 3.1415927
+  offset: -1.1
   bulletPrefab: {fileID: 2511248650324108341, guid: 48a7c062b3b921a4e85f1da9f6fa8730, type: 3}
   bulletForce: 125
   numberOfRounds: 3
