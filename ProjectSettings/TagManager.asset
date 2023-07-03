@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - EnemyProjectile
+  - PlayerProjectile
+  - Fungus
+  - Ground
+  - TPB2
   layers:
   - Default
   - TransparentFX
