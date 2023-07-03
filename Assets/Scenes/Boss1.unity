@@ -756,7 +756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 643289525}
   - component: {fileID: 643289524}
-  - component: {fileID: 643289523}
+  - component: {fileID: 643289526}
   m_Layer: 0
   m_Name: RightLeftTangledSpawner (2)
   m_TagString: Untagged
@@ -764,25 +764,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &643289523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643289522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea56de6e7f825a4498a15de2dcc16019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 8882265948199637784, guid: fb6c87a59598c5641a6c90c9bad2bd7a, type: 3}
-  shootCadency: 6
-  shootStart: 24
-  minX: -6
-  maxX: 12
-  minY: -5
-  maxY: -5
 --- !u!212 &643289524
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -850,6 +831,25 @@ Transform:
   m_Father: {fileID: 424418428}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 65}
+--- !u!114 &643289526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643289522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e1481653e16a94bbe0def14d849063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 8882265948199637784, guid: fb6c87a59598c5641a6c90c9bad2bd7a, type: 3}
+  shootCadency: 6
+  shootStart: 24
+  minX: -6
+  maxX: 12
+  minY: -5
+  maxY: -5
 --- !u!1 &704619071
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,7 +860,7 @@ GameObject:
   m_Component:
   - component: {fileID: 704619074}
   - component: {fileID: 704619073}
-  - component: {fileID: 704619072}
+  - component: {fileID: 704619075}
   m_Layer: 0
   m_Name: LeftTangledSpawner
   m_TagString: Untagged
@@ -868,25 +868,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &704619072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 704619071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea56de6e7f825a4498a15de2dcc16019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 8882265948199637784, guid: fb6c87a59598c5641a6c90c9bad2bd7a, type: 3}
-  shootCadency: 2
-  shootStart: 2
-  minX: -12
-  maxX: -12
-  minY: -3
-  maxY: 3
 --- !u!212 &704619073
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -954,6 +935,25 @@ Transform:
   m_Father: {fileID: 424418428}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &704619075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704619071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e1481653e16a94bbe0def14d849063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 8882265948199637784, guid: fb6c87a59598c5641a6c90c9bad2bd7a, type: 3}
+  shootCadency: 2
+  shootStart: 2
+  minX: -12
+  maxX: -12
+  minY: -3
+  maxY: 3
 --- !u!1 &911232863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,7 +1089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1144791233}
   - component: {fileID: 1144791232}
-  - component: {fileID: 1144791231}
+  - component: {fileID: 1144791234}
   m_Layer: 0
   m_Name: LeftRightTangledSpawner
   m_TagString: Untagged
@@ -1097,25 +1097,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1144791231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144791230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea56de6e7f825a4498a15de2dcc16019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 8882265948199637784, guid: fb6c87a59598c5641a6c90c9bad2bd7a, type: 3}
-  shootCadency: 6
-  shootStart: 12
-  minX: -10
-  maxX: 8
-  minY: -5
-  maxY: -5
 --- !u!212 &1144791232
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1183,6 +1164,25 @@ Transform:
   m_Father: {fileID: 424418428}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 65}
+--- !u!114 &1144791234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144791230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e1481653e16a94bbe0def14d849063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 8882265948199637784, guid: fb6c87a59598c5641a6c90c9bad2bd7a, type: 3}
+  shootCadency: 6
+  shootStart: 12
+  minX: -10
+  maxX: 8
+  minY: -5
+  maxY: -5
 --- !u!1 &1146580415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,7 +1662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1461486976}
   - component: {fileID: 1461486975}
-  - component: {fileID: 1461486974}
+  - component: {fileID: 1461486977}
   m_Layer: 0
   m_Name: TopTangledSpawner
   m_TagString: Untagged
@@ -1670,25 +1670,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1461486974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461486973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea56de6e7f825a4498a15de2dcc16019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 8882265948199637784, guid: fb6c87a59598c5641a6c90c9bad2bd7a, type: 3}
-  shootCadency: 3
-  shootStart: 12
-  minX: -8
-  maxX: 13
-  minY: 7
-  maxY: 7
 --- !u!212 &1461486975
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1756,6 +1737,25 @@ Transform:
   m_Father: {fileID: 424418428}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &1461486977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461486973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e1481653e16a94bbe0def14d849063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 8882265948199637784, guid: fb6c87a59598c5641a6c90c9bad2bd7a, type: 3}
+  shootCadency: 3
+  shootStart: 12
+  minX: -8
+  maxX: 13
+  minY: 7
+  maxY: 7
 --- !u!1 &1517009825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1766,8 +1766,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1517009827}
   - component: {fileID: 1517009826}
-  - component: {fileID: 1517009828}
   - component: {fileID: 1517009829}
+  - component: {fileID: 1517009828}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Fungus
@@ -1851,12 +1851,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1517009825}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96a5532f70c2aa040af1837dfd16f8b7, type: 3}
+  m_Script: {fileID: 11500000, guid: ec640ae7e7533c84b8ca0f6f9a1738e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -5
-  startMove: 0
-  bossPhase2Attack: {fileID: 1517009829}
+  numberOfFungus: []
+  shootDelay: 5
+  shootSpeedAugment: 0.25
+  maxShootSpeed: 1
+  fungusProjectile: {fileID: 1396912418454867423, guid: 86ec6b1fc177f2d42b950180c09a048e, type: 3}
+  mainBoss: {fileID: 1517009829}
 --- !u!114 &1517009829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1866,15 +1869,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1517009825}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a626864e5c7f7c40907adc9934a7324, type: 3}
+  m_Script: {fileID: 11500000, guid: 3353df59f15a9644a89d71bb44b7a1bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfFungus: []
-  shootDelay: 5
-  shootSpeedAugment: 0.25
-  maxShootSpeed: 1
-  fungusProjectile: {fileID: 1396912418454867423, guid: 86ec6b1fc177f2d42b950180c09a048e, type: 3}
-  mainBoss: {fileID: 1517009828}
+  speed: -5
+  startMove: 0
+  bossPhase2Attack: {fileID: 1517009828}
 --- !u!1 &1560105542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,7 +1885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1560105545}
   - component: {fileID: 1560105544}
-  - component: {fileID: 1560105543}
+  - component: {fileID: 1560105546}
   m_Layer: 0
   m_Name: RightTangledSpawner
   m_TagString: Untagged
@@ -1893,25 +1893,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1560105543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560105542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea56de6e7f825a4498a15de2dcc16019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 8882265948199637784, guid: fb6c87a59598c5641a6c90c9bad2bd7a, type: 3}
-  shootCadency: 2
-  shootStart: 4
-  minX: 19
-  maxX: 19
-  minY: -3
-  maxY: 3
 --- !u!212 &1560105544
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1979,6 +1960,25 @@ Transform:
   m_Father: {fileID: 424418428}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &1560105546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560105542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e1481653e16a94bbe0def14d849063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 8882265948199637784, guid: fb6c87a59598c5641a6c90c9bad2bd7a, type: 3}
+  shootCadency: 2
+  shootStart: 4
+  minX: 19
+  maxX: 19
+  minY: -3
+  maxY: 3
 --- !u!1 &1853172615
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,7 +1991,7 @@ GameObject:
   - component: {fileID: 1853172617}
   - component: {fileID: 1853172616}
   - component: {fileID: 1853172620}
-  - component: {fileID: 1853172619}
+  - component: {fileID: 1853172621}
   m_Layer: 0
   m_Name: Phase1Wall
   m_TagString: Untagged
@@ -2092,21 +2092,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1853172619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853172615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9568822b472da54a807c47df4eb50d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawners: {fileID: 424418427}
-  wallHp: 10
-  phase2: {fileID: 1517009828}
 --- !u!50 &1853172620
 Rigidbody2D:
   serializedVersion: 4
@@ -2128,6 +2113,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1853172621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853172615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a23c0ac6721df7a439630258855831a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawners: {fileID: 424418427}
+  wallHp: 10
+  phase2: {fileID: 1517009829}
 --- !u!1001 &8882265948078361998
 PrefabInstance:
   m_ObjectHideFlags: 0

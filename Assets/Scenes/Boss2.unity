@@ -363,7 +363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ef2d0e107650c489655deee5620cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
 --- !u!212 &322380801
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -853,7 +852,6 @@ GameObject:
   m_Component:
   - component: {fileID: 688369900}
   - component: {fileID: 688369902}
-  - component: {fileID: 688369901}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -876,19 +874,6 @@ Transform:
   m_Father: {fileID: 2081261342}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &688369901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 688369899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2ef2d0e107650c489655deee5620cfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
 --- !u!212 &688369902
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -986,7 +971,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ef2d0e107650c489655deee5620cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
 --- !u!212 &886164347
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1390,7 +1374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ef2d0e107650c489655deee5620cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
 --- !u!212 &1220806470
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1488,7 +1471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ef2d0e107650c489655deee5620cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
 --- !u!212 &1392579891
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1670,7 +1652,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ef2d0e107650c489655deee5620cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
 --- !u!212 &1482774080
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1901,7 +1882,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1626342799}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fa09e42b3d112a4f86700690e05933f, type: 3}
+  m_Script: {fileID: 11500000, guid: 34cd73965e51eda4a8bab929513e43c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   teleportPositions: []

@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8882265948199637783}
   - component: {fileID: 8882265948199637782}
-  - component: {fileID: 8882265948199637785}
   - component: {fileID: 8882265948199637780}
+  - component: {fileID: 8489032258009239939}
   m_Layer: 0
   m_Name: TangledProjectile
   m_TagString: PlayerProjectile
@@ -86,18 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8882265948199637785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8882265948199637784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 778c76eff0dabd34ab0d2d4432218c16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &8882265948199637780
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -124,3 +112,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8489032258009239939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8882265948199637784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd6765b7ac6dd249a22cc90a58666c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
