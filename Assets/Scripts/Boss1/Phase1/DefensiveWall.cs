@@ -5,12 +5,14 @@ using UnityEngine;
 public class DefensiveWall : MonoBehaviour
 {
     [SerializeField] private GameObject spawners;
+    [SerializeField] private BoxCollider2D phase2Damage;
     [SerializeField] private int wallHp = 10;
     public BossSinMove phase2;
 
-    private void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.P)) { 
+        if (collision.CompareTag("PlayerBullet")) {
+            Destroy(collision.gameObject);
             wallHp -= 1;
             Debug.Log("El jefe tiene " + wallHp);
             if (wallHp <= 0)
@@ -18,15 +20,11 @@ public class DefensiveWall : MonoBehaviour
                 Debug.Log("Phase 1 completed");
                 Destroy(spawners.gameObject);
                 phase2.enabled = true;
+                phase2Damage.enabled = true;
                 gameObject.SetActive(false);
 
             }
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-
     }
 
    

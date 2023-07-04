@@ -13,9 +13,11 @@ public class FungusDrop : MonoBehaviour
     [SerializeField] private float shootSpeedAugment;
     [SerializeField] private float maxShootSpeed;
 
-    [SerializeField] private GameObject fungusProjectile;
+    [SerializeField] private GameObject[] fungusProjectile;
 
     [SerializeField] private BossSinMove mainBoss;
+
+    [SerializeField] private int goodFungusProbability;
 
 
     // Start is called before the first frame update
@@ -30,7 +32,9 @@ public class FungusDrop : MonoBehaviour
         numberOfFungus = GameObject.FindGameObjectsWithTag("Fungus");
         if (numberOfFungus.Length < 4 && !isFungusOnCooldown && mainBoss.startMove)
         {
-            Instantiate(fungusProjectile, transform.position, transform.rotation);
+            int fungusChoice = Random.Range(0,100)<= goodFungusProbability? 1 : 0;
+            Debug.Log(fungusChoice);
+            Instantiate(fungusProjectile[fungusChoice], transform.position, transform.rotation);
             isFungusOnCooldown = true;
             StartCoroutine(FungusCooldown());
         }

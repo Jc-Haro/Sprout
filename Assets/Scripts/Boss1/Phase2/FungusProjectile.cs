@@ -33,38 +33,31 @@ public class FungusProjectile : MonoBehaviour
             newPos.y -= fallSpeed * Time.deltaTime;
             transform.position = newPos; ;
         }
-        //change to ontrigerrenter2d
-        if (Input.GetKeyDown(KeyCode.Q) && actualPhase != 0 && !hasShoot) //collision.CompareTag("PlayerProjectile") && actualPhase != 0)
-        {
-            hasShoot = true;
-            bulletSpawn.numberOfRounds = actualPhase;
-            bulletSpawn.GenerateBullets();
-            
-        }
+   
+      
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
         if (collision.gameObject.CompareTag("Ground") && !isGrounded)
         {
-            isGrounded = true;
-            Debug.Log("Choco con el piso");
             isGrounded = true;
             fungusPhases[actualPhase].SetActive(false);
             fungusPhases[actualPhase + 1].SetActive(true);
             actualPhase++;
+            gameObject.GetComponent<BoxCollider2D>().size = fungusPhases[actualPhase].GetComponent<BoxCollider2D>().size; 
             StartCoroutine(ChangePhase());
+            
         }
-        else
+        if (collision.CompareTag("PlayerBullet") && !hasShoot)
         {
-            Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), collision.gameObject.GetComponent<Collider2D>());
+            hasShoot = true;
+            bulletSpawn.numberOfRounds = actualPhase;
+            bulletSpawn.GenerateBullets();
         }
     }
+
+   
 
     IEnumerator ChangePhase()
     {
@@ -76,7 +69,8 @@ public class FungusProjectile : MonoBehaviour
             fungusPhases[actualPhase].SetActive(false);
             fungusPhases[actualPhase + 1].SetActive(true);
             actualPhase++;
-            
+            gameObject.GetComponent<BoxCollider2D>().size = fungusPhases[actualPhase].GetComponent<BoxCollider2D>().size;
+
             StartCoroutine(ChangePhase());
         }
         else

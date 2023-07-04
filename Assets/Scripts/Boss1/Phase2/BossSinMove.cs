@@ -7,9 +7,16 @@ public class BossSinMove : MonoBehaviour
     [SerializeField] private float speed;
     private float sinCenterYPos;
     private float amplitude = 1.0f;
+    private float minAmplitude = 0.5f;
+    private float maxAmplitude = 1.5f;
     private float frequenzy = 1.0f;
+    private float minFrequenzy = 0.5f;
+    private float maxFrequenzy = 1.5f;
     public bool startMove = false;
     [SerializeField] private FungusDrop bossPhase2Attack;
+    public int bossHP;
+    [SerializeField] private GameObject nextLevelPortal;
+    [SerializeField] private GameObject preciseShoot;
 
     // Start is called before the first frame update
     void Start()
@@ -53,6 +60,25 @@ public class BossSinMove : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         transform.Rotate(new Vector3(0, 180, 0));
+        frequenzy = Random.Range(minFrequenzy, maxFrequenzy);
+        amplitude = Random.Range(minAmplitude, maxAmplitude);
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            Destroy(collision.gameObject);
+            bossHP -= 1;
+            Debug.Log("Boss HP " + bossHP);
+            if (bossHP <= 0)
+            {
+                Destroy(preciseShoot);
+                nextLevelPortal.SetActive(true);
+                Destroy(gameObject);
+            }
+        }
 
     }
 }
