@@ -11,6 +11,7 @@ TagManager:
   - TPB2
   - PlayerBullet
   - PlayerSprite
+  - PlayerCamera
   layers:
   - Default
   - TransparentFX

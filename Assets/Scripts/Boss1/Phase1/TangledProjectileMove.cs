@@ -6,7 +6,7 @@ public class TangledProjectileMove : MonoBehaviour
 {
     private float speed;
     private readonly float minSpeed = 7.0f;
-    private readonly float maxSpeed = 7.0f;
+    private readonly float maxSpeed = 12.0f;
     // Start is called before the first frame update
 
 
@@ -34,7 +34,6 @@ public class TangledProjectileMove : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player got hit");
             Destroy(gameObject);
         }
     }
