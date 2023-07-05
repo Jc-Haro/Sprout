@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1396912418454867421}
   - component: {fileID: 1396912418454867422}
-  - component: {fileID: 1396912418454867419}
-  - component: {fileID: 1396912418454867420}
+  - component: {fileID: 2409483965153428006}
+  - component: {fileID: 5884103518566609513}
+  - component: {fileID: 3660410427417078666}
   m_Layer: 0
   m_Name: FungusContainer
   m_TagString: Fungus
@@ -48,7 +49,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.09316337}
@@ -64,7 +65,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.33454585}
   m_EdgeRadius: 0
---- !u!114 &1396912418454867419
+--- !u!114 &2409483965153428006
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,18 +74,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1396912418454867423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16982dd5d6cddba4fa5263b0e86fd699, type: 3}
+  m_Script: {fileID: 11500000, guid: 66977efa2c4197444b1ace0e97df456d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fungusPhases:
-  - {fileID: 1396912420215614652}
-  - {fileID: 1396912419404501787}
-  - {fileID: 1396912419893055191}
-  - {fileID: 1396912419033016898}
-  actualPhase: 0
-  bulletSpawn: {fileID: 1396912418454867420}
-  fallSpeed: 9.81
---- !u!114 &1396912418454867420
+  pHealth: {fileID: 0}
+  damage: 20
+--- !u!114 &5884103518566609513
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,7 +88,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1396912418454867423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66ef1a8a47ad9f84fbc6fd94046cf57f, type: 3}
+  m_Script: {fileID: 11500000, guid: ce9a96a330f5255418678968c7b5dbe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   samples: 3
@@ -107,6 +102,26 @@ MonoBehaviour:
   startShootingDelay: 0
   shootingRate: 0.5
   bulletRotation: 0
+--- !u!114 &3660410427417078666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396912418454867423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c4ec16933045aa46a8be0046521fa79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fungusPhases:
+  - {fileID: 1396912420215614652}
+  - {fileID: 1396912419404501787}
+  - {fileID: 1396912419893055191}
+  - {fileID: 1396912419033016898}
+  actualPhase: 0
+  bulletSpawn: {fileID: 5884103518566609513}
+  fallSpeed: 9.81
 --- !u!1 &1396912419033016898
 GameObject:
   m_ObjectHideFlags: 0
