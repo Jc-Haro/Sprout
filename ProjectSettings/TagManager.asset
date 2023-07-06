@@ -12,6 +12,7 @@ TagManager:
   - PlayerBullet
   - PlayerSprite
   - PlayerCamera
+  - PlayerF
   layers:
   - Default
   - TransparentFX

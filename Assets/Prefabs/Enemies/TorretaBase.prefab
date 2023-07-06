@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8891251261416495469}
   - component: {fileID: 777644517448194975}
   - component: {fileID: 1746592690223373823}
-  - component: {fileID: -8165500248390027592}
   m_Layer: 0
   m_Name: TorretaBase
   m_TagString: Untagged
@@ -112,17 +111,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-8165500248390027592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6892777491192779437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1152c7e7ac5e6c44c80ba36b079bfcba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  distance: 10
