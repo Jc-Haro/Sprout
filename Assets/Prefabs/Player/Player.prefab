@@ -516,9 +516,9 @@ MonoBehaviour:
   pState: {fileID: 3561411235425532282}
   pHealth: {fileID: 11729258458038094}
   healTimer: 0
-  timeToHeal: 0
-  mana: 0
-  manaDrainSpeed: 0
+  timeToHeal: 1
+  mana: 2
+  manaDrainSpeed: 0.2
 --- !u!114 &11729258458038094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a80e6ee8a1fb0446bf93668ac4bc578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
+  health: 100
   maxHealth: 100
   healthBar: {fileID: 11729257315121881}
 --- !u!114 &3561411235425532282

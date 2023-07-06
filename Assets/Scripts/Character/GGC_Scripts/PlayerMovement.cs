@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private float maxMana =  2;
     private float manaPerSecond = 0.05f;
     [SerializeField] float manaDrainSpeed;
-
+    public Image manaBar;
 
     private void Start()
     {
@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        manaBar.fillAmount = Mathf.Clamp(Mana / maxMana, 0, 1);
         horizontal = Input.GetAxisRaw("Horizontal");
         pState.moving = horizontal != 0;
 
