@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         maxHealth = health;
+        healthBar.color = Color.green;
     }
 
     // Update is called once per frame
@@ -25,4 +26,5 @@ public class PlayerHealth : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
+
 }

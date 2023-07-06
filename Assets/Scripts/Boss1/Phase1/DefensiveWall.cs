@@ -8,6 +8,7 @@ public class DefensiveWall : MonoBehaviour
     [SerializeField] private BoxCollider2D phase2Damage;
     [SerializeField] private int wallHp = 10;
     public BossSinMove phase2;
+    [SerializeField] PreciseShoot preciseShoot;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,6 +22,7 @@ public class DefensiveWall : MonoBehaviour
                 Destroy(spawners.gameObject);
                 phase2.enabled = true;
                 phase2Damage.enabled = true;
+                preciseShoot.repeatRate = 2.0f;
                 gameObject.SetActive(false);
 
             }

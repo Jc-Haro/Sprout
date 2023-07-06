@@ -41,13 +41,16 @@ public class FungusProjectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground") && !isGrounded)
         {
+            
             isGrounded = true;
             fungusPhases[actualPhase].SetActive(false);
             fungusPhases[actualPhase + 1].SetActive(true);
             actualPhase++;
-            gameObject.GetComponent<BoxCollider2D>().size = fungusPhases[actualPhase].GetComponent<BoxCollider2D>().size; 
+            Vector2 newColliderSize = fungusPhases[actualPhase].GetComponent<BoxCollider2D>().size;
+            newColliderSize = ColliderRisezeHandler(newColliderSize);
+            gameObject.GetComponent<BoxCollider2D>().size = newColliderSize;
             StartCoroutine(ChangePhase());
-            
+
         }
         if (collision.CompareTag("PlayerBullet") && !hasShoot)
         {
@@ -57,7 +60,12 @@ public class FungusProjectile : MonoBehaviour
         }
     }
 
-   
+    private Vector2 ColliderRisezeHandler(Vector2 newColliderSize)
+    {
+         
+        return new Vector2(newColliderSize.x * fungusPhases[actualPhase].transform.localScale.x, newColliderSize.y * fungusPhases[actualPhase].transform.localScale.y * 2);
+    }
+
 
     IEnumerator ChangePhase()
     {
@@ -69,7 +77,9 @@ public class FungusProjectile : MonoBehaviour
             fungusPhases[actualPhase].SetActive(false);
             fungusPhases[actualPhase + 1].SetActive(true);
             actualPhase++;
-            gameObject.GetComponent<BoxCollider2D>().size = fungusPhases[actualPhase].GetComponent<BoxCollider2D>().size;
+            Vector2 newColliderSize = fungusPhases[actualPhase].GetComponent<BoxCollider2D>().size;
+            newColliderSize = ColliderRisezeHandler(newColliderSize);
+            gameObject.GetComponent<BoxCollider2D>().size = newColliderSize;
 
             StartCoroutine(ChangePhase());
         }
