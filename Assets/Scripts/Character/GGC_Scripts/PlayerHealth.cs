@@ -25,6 +25,18 @@ public class PlayerHealth : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        if (healthBar.fillAmount >= 0.60)
+        {
+            healthBar.color = Color.green;
+        }
+        else if (healthBar.fillAmount >= 0.4)
+        {
+            healthBar.color = new Color(1, 0.4f, 0.07f, 1); //105 255
+        }
+        else
+        {
+            healthBar.color = Color.red;
+        }
     }
 
 }

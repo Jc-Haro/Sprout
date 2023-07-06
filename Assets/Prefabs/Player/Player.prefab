@@ -348,7 +348,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -372,6 +372,7 @@ GameObject:
   - component: {fileID: 11729258458038090}
   - component: {fileID: 11729258458038101}
   - component: {fileID: 11729258458038094}
+  - component: {fileID: 3561411235425532282}
   m_Layer: 8
   m_Name: PlayerSprite
   m_TagString: Player
@@ -512,6 +513,12 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  pState: {fileID: 3561411235425532282}
+  pHealth: {fileID: 11729258458038094}
+  healTimer: 0
+  timeToHeal: 0
+  mana: 0
+  manaDrainSpeed: 0
 --- !u!114 &11729258458038094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,9 +531,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a80e6ee8a1fb0446bf93668ac4bc578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 20
   maxHealth: 100
   healthBar: {fileID: 11729257315121881}
+--- !u!114 &3561411235425532282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11729258458038100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8b24de9fa25b940bc628f816e55b6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumping: 0
+  healing: 0
+  moving: 0
 --- !u!1 &11729258976783724
 GameObject:
   m_ObjectHideFlags: 0

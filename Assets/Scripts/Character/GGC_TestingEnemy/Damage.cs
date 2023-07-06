@@ -15,18 +15,7 @@ public class Damage : MonoBehaviour
             {
                 pHealth = collision.gameObject.GetComponent<PlayerHealth>();
                 pHealth.health -= damage;
-                if (pHealth.healthBar.fillAmount > 0.60)
-                {
-                    pHealth.healthBar.color = Color.green;
-                }
-                else if (pHealth.healthBar.fillAmount > 0.3)
-                {
-                    pHealth.healthBar.color = new Color(1, 0.4f, 0.07f, 1); //105 255
-                }
-                else
-                {
-                    pHealth.healthBar.color = Color.red;
-                }
+        
             }
         }
     }
@@ -37,18 +26,7 @@ public class Damage : MonoBehaviour
             {
                 pHealth = collision.gameObject.GetComponent<PlayerHealth>();
                 pHealth.health -= damage;
-                if (pHealth.healthBar.fillAmount >= 0.60)
-                {
-                    pHealth.healthBar.color = Color.green;
-                }
-                else if (pHealth.healthBar.fillAmount >= 0.3)
-                {
-                    pHealth.healthBar.color = new Color(1, 0.4f, 0.07f, 1); 
-                }
-                else
-                {
-                    pHealth.healthBar.color = Color.red;
-                }
+               
             }
         }
     

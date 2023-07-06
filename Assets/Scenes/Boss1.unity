@@ -2188,7 +2188,7 @@ Transform:
   - {fileID: 839391974}
   - {fileID: 1262255680}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &475029621
 GameObject:
@@ -2334,7 +2334,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.9960785, b: 0.14117648, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7129,7 +7129,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.254717, g: 0.1710496, b: 0.05887327, a: 1}
+  m_Color: {r: 0.254717, g: 0.1710496, b: 0.05887327, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13643,7 +13643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6236276221172671579, guid: 80078f01e2ee6b3419b68e6cd34297a8, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6236276221172671579, guid: 80078f01e2ee6b3419b68e6cd34297a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13741,6 +13741,22 @@ PrefabInstance:
     - target: {fileID: 11729257892191597, guid: 8218d8ecf74367d45ba5c1cb6b351047, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 11729258458038094, guid: 8218d8ecf74367d45ba5c1cb6b351047, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 11729258458038101, guid: 8218d8ecf74367d45ba5c1cb6b351047, type: 3}
+      propertyPath: mana
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11729258458038101, guid: 8218d8ecf74367d45ba5c1cb6b351047, type: 3}
+      propertyPath: timeToHeal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11729258458038101, guid: 8218d8ecf74367d45ba5c1cb6b351047, type: 3}
+      propertyPath: manaDrainSpeed
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8218d8ecf74367d45ba5c1cb6b351047, type: 3}
