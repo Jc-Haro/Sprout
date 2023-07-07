@@ -13,6 +13,7 @@ TagManager:
   - PlayerSprite
   - PlayerCamera
   - PlayerFocus
+  - Enemy
   layers:
   - Default
   - TransparentFX

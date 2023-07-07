@@ -36,6 +36,8 @@ public class EnemyShooting : MonoBehaviour
                 shoot();
             }
         }
+
+        
     }
 
     void shoot()
