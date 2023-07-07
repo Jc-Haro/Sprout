@@ -46,8 +46,9 @@ public class PlayerMovement : MonoBehaviour
         }
         if (mana < maxMana && !Input.GetKey(KeyCode.LeftShift))
         {
-            mana += manaPerSecond * Time.deltaTime;
+            Mana += manaPerSecond * Time.deltaTime;
         }
+       
 
 
         Flip();
@@ -84,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
             //if mana stats change
             if (mana != value)
             {
-                mana = Mathf.Clamp(value, 0, 1);
+                mana = Mathf.Clamp(value, 0, 2);
             }
         }
     }
@@ -100,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
             if (healTimer >= timeToHeal)
             {
 
-                pHealth.health = pHealth.health + 10;
+                pHealth.health = pHealth.health + 5;
                 healTimer = 0;
             }
             //drain mana

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5f8b6d6054faaaa44a00c15ca9bbd303
+guid: c64b650b8c4b9a54ca33664568297d7d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BARRA_DE_ENERGIA_ASSET_9_0
+      name: Base_0
       rect:
         serializedVersion: 2
-        x: 163
-        y: 1235
-        width: 4324
-        height: 1382
+        x: 412
+        y: 330
+        width: 583
+        height: 291
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7d23abdf4d63d443af93057ad08113c
-      internalID: 568879683
+      spriteID: 2dc8a882e5474304c849212c10f151d8
+      internalID: 1771759049
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BARRA_DE_ENERGIA_ASSET_9_0: 568879683
+      Base_0: 1771759049
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
