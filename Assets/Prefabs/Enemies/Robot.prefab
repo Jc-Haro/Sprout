@@ -12,7 +12,12 @@ GameObject:
   - component: {fileID: 1095035812870425286}
   - component: {fileID: 2222538680888192227}
   - component: {fileID: -6272101874929674343}
+<<<<<<< HEAD
   - component: {fileID: 797371701}
+=======
+  - component: {fileID: -7421187735499685262}
+  - component: {fileID: 3946501564166557112}
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_Layer: 0
   m_Name: Robot
   m_TagString: Untagged
@@ -100,7 +105,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+<<<<<<< HEAD
   distance: 3.5
+=======
+  distance: 10
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!61 &-6272101874929674343
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127,7 +136,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+<<<<<<< HEAD
 --- !u!114 &797371701
+=======
+--- !u!114 &-7421187735499685262
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,4 +153,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pHealth: {fileID: 0}
+<<<<<<< HEAD
   damage: 20
+=======
+  damage: 10
+--- !u!114 &3946501564166557112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6535082267436428481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 832b120a2e7e0ba4d91b763f348728e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalHP: 5
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d

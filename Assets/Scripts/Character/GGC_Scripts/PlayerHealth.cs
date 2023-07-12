@@ -9,10 +9,12 @@ public class PlayerHealth : MonoBehaviour
     public float health;
     public float maxHealth;
     public Image healthBar;
+    
     // Start is called before the first frame update
     void Start()
     {
         maxHealth = health;
+        healthBar.color = Color.green;
     }
 
     // Update is called once per frame
@@ -23,6 +25,22 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+<<<<<<< HEAD
+=======
+        }
+        if (healthBar.fillAmount >= 0.60)
+        {
+            healthBar.color = Color.green;
+        }
+        else if (healthBar.fillAmount >= 0.4)
+        {
+            healthBar.color = new Color(1, 0.4f, 0.07f, 1); //105 255
+        }
+        else
+        {
+            healthBar.color = Color.red;
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
         }
     }
+
 }

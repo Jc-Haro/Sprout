@@ -11,10 +11,19 @@ public class PreciseShoot : MonoBehaviour
     [SerializeField] private GameObject player;
 
     [SerializeField] private GameObject bulletPrefab;
+<<<<<<< HEAD
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("GeneratePreciseShooot", 6.0f, 3.0f);
+=======
+    public float repeatRate = 3.0f;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        InvokeRepeating("GeneratePreciseShooot", 6.0f, repeatRate);
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 
     }
 

@@ -71,7 +71,10 @@ public class BossSinMove : MonoBehaviour
         {
             Destroy(collision.gameObject);
             bossHP -= 1;
+<<<<<<< HEAD
             Debug.Log("Boss HP " + bossHP);
+=======
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
             if (bossHP <= 0)
             {
                 Destroy(preciseShoot);

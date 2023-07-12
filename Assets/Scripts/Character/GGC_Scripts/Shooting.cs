@@ -40,7 +40,7 @@ public class Shooting : MonoBehaviour
                 timer = 0;  
             }
         }
-        if(Input.GetMouseButtonDown(0) && canFire)
+        if(Input.GetMouseButton(0) && canFire)
         {
             canFire = false;
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);

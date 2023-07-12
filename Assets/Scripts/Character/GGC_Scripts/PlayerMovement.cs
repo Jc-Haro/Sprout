@@ -1,5 +1,9 @@
 using UnityEngine;
+<<<<<<< HEAD
 
+=======
+using UnityEngine.UI;
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
@@ -11,21 +15,63 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+<<<<<<< HEAD
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+=======
+    [SerializeField] private PlayerStateList pState;//new
+    [SerializeField] private PlayerHealth pHealth;//new
+    public float healTimer = 0;//new
+    [SerializeField] float timeToHeal;//new
+
+    [SerializeField] float mana;
+    private float maxMana =  2;
+    private float manaPerSecond = 0.05f;
+    [SerializeField] float manaDrainSpeed;
+    public Image manaBar;
+
+    private void Start()
+    {
+        Mana = mana;
+    }
+
+    void Update()
+    {
+        manaBar.fillAmount = Mathf.Clamp(Mana / maxMana, 0, 1);
+        horizontal = Input.GetAxisRaw("Horizontal");
+        pState.moving = horizontal != 0;
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+<<<<<<< HEAD
+=======
+            pState.jumping = true;
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+<<<<<<< HEAD
         }
 
         Flip();
+=======
+            pState.jumping = false;
+        }
+        if (mana < maxMana && !Input.GetKey(KeyCode.LeftShift))
+        {
+            Mana += manaPerSecond * Time.deltaTime;
+        }
+       
+
+
+        Flip();
+        Heal();
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
     }
 
     private void FixedUpdate()
@@ -49,4 +95,44 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+<<<<<<< HEAD
+=======
+
+    float Mana
+    {
+        get { return mana; }
+        set
+        {
+            //if mana stats change
+            if (mana != value)
+            {
+                mana = Mathf.Clamp(value, 0, 2);
+            }
+        }
+    }
+    void Heal()
+    {
+        if (Input.GetKey(KeyCode.LeftShift) && pHealth.health < pHealth.maxHealth && Mana > 0 && !pState.jumping && !pState.moving)
+        {
+
+            pState.healing = true;
+
+            //healing
+            healTimer += Time.deltaTime;
+            if (healTimer >= timeToHeal)
+            {
+
+                pHealth.health = pHealth.health + 5;
+                healTimer = 0;
+            }
+            //drain mana
+            Mana -= Time.deltaTime * manaDrainSpeed;
+        }
+        else
+        {
+            pState.healing = false;
+            healTimer = 0;
+        }
+    }
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 }

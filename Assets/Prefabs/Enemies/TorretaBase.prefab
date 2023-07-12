@@ -10,8 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8891251261416495469}
   - component: {fileID: 777644517448194975}
+<<<<<<< HEAD
   - component: {fileID: 1746592690223373823}
   - component: {fileID: -8165500248390027592}
+=======
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_Layer: 0
   m_Name: TorretaBase
   m_TagString: Untagged
@@ -75,8 +78,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.19379672, g: 0.5758049, b: 0.6320754, a: 1}
+=======
+  m_Sprite: {fileID: 1771759049, guid: c64b650b8c4b9a54ca33664568297d7d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,6 +94,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!61 &1746592690223373823
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -126,3 +135,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   distance: 10
+=======
+>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
