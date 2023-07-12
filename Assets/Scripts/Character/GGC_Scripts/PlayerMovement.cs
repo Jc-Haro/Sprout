@@ -1,9 +1,5 @@
 using UnityEngine;
-<<<<<<< HEAD
-
-=======
 using UnityEngine.UI;
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
@@ -15,11 +11,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
-<<<<<<< HEAD
-    void Update()
-    {
-        horizontal = Input.GetAxisRaw("Horizontal");
-=======
     [SerializeField] private PlayerStateList pState;//new
     [SerializeField] private PlayerHealth pHealth;//new
     public float healTimer = 0;//new
@@ -41,25 +32,16 @@ public class PlayerMovement : MonoBehaviour
         manaBar.fillAmount = Mathf.Clamp(Mana / maxMana, 0, 1);
         horizontal = Input.GetAxisRaw("Horizontal");
         pState.moving = horizontal != 0;
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-<<<<<<< HEAD
-=======
             pState.jumping = true;
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-<<<<<<< HEAD
-        }
-
-        Flip();
-=======
             pState.jumping = false;
         }
         if (mana < maxMana && !Input.GetKey(KeyCode.LeftShift))
@@ -71,7 +53,6 @@ public class PlayerMovement : MonoBehaviour
 
         Flip();
         Heal();
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
     }
 
     private void FixedUpdate()
@@ -95,8 +76,6 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
-<<<<<<< HEAD
-=======
 
     float Mana
     {
@@ -134,5 +113,4 @@ public class PlayerMovement : MonoBehaviour
             healTimer = 0;
         }
     }
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 }

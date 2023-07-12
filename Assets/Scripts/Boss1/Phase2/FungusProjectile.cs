@@ -41,25 +41,16 @@ public class FungusProjectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground") && !isGrounded)
         {
-<<<<<<< HEAD
-=======
             
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
             isGrounded = true;
             fungusPhases[actualPhase].SetActive(false);
             fungusPhases[actualPhase + 1].SetActive(true);
             actualPhase++;
-<<<<<<< HEAD
-            gameObject.GetComponent<BoxCollider2D>().size = fungusPhases[actualPhase].GetComponent<BoxCollider2D>().size; 
-            StartCoroutine(ChangePhase());
-            
-=======
             Vector2 newColliderSize = fungusPhases[actualPhase].GetComponent<BoxCollider2D>().size;
             newColliderSize = ColliderRisezeHandler(newColliderSize);
             gameObject.GetComponent<BoxCollider2D>().size = newColliderSize;
             StartCoroutine(ChangePhase());
 
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
         }
         if (collision.CompareTag("PlayerBullet") && !hasShoot)
         {
@@ -69,16 +60,12 @@ public class FungusProjectile : MonoBehaviour
         }
     }
 
-<<<<<<< HEAD
-   
-=======
     private Vector2 ColliderRisezeHandler(Vector2 newColliderSize)
     {
          
         return new Vector2(newColliderSize.x * fungusPhases[actualPhase].transform.localScale.x, newColliderSize.y * fungusPhases[actualPhase].transform.localScale.y * 2);
     }
 
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 
     IEnumerator ChangePhase()
     {
@@ -90,13 +77,9 @@ public class FungusProjectile : MonoBehaviour
             fungusPhases[actualPhase].SetActive(false);
             fungusPhases[actualPhase + 1].SetActive(true);
             actualPhase++;
-<<<<<<< HEAD
-            gameObject.GetComponent<BoxCollider2D>().size = fungusPhases[actualPhase].GetComponent<BoxCollider2D>().size;
-=======
             Vector2 newColliderSize = fungusPhases[actualPhase].GetComponent<BoxCollider2D>().size;
             newColliderSize = ColliderRisezeHandler(newColliderSize);
             gameObject.GetComponent<BoxCollider2D>().size = newColliderSize;
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 
             StartCoroutine(ChangePhase());
         }

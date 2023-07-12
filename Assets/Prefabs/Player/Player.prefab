@@ -1,7 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
-=======
 --- !u!1 &993742471
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +152,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &1275460497
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,20 +309,6 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11729257315121883}
-<<<<<<< HEAD
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 11729259118393484}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -207, y: 161}
-  m_SizeDelta: {x: 362.2906, y: 40.692}
-=======
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.9014457, y: 1.9014457, z: 1.9014457}
@@ -339,7 +322,6 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 164.8, y: -45}
   m_SizeDelta: {x: 88.15311, y: 14.243607}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &11729257315121886
 CanvasRenderer:
@@ -362,11 +344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-<<<<<<< HEAD
-  m_Color: {r: 1, g: 0.07142854, b: 0.07142854, a: 1}
-=======
   m_Color: {r: 1, g: 0.4082965, b: 0.07058823, a: 1}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -441,11 +419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11729258156655420}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 0, y: -0.76, z: 0}
-=======
   m_LocalPosition: {x: 0, y: -7.35, z: 0}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -526,11 +500,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-<<<<<<< HEAD
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-=======
   m_Color: {r: 0, g: 0, b: 0, a: 0}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -554,10 +524,7 @@ GameObject:
   - component: {fileID: 11729258458038090}
   - component: {fileID: 11729258458038101}
   - component: {fileID: 11729258458038094}
-<<<<<<< HEAD
-=======
   - component: {fileID: 3561411235425532282}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_Layer: 8
   m_Name: PlayerSprite
   m_TagString: Player
@@ -573,21 +540,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11729258458038100}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-=======
   m_LocalPosition: {x: 0, y: -0.168, z: 0}
   m_LocalScale: {x: 0.057508003, y: 0.057508003, z: 0.057508003}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 11729258156655421}
   - {fileID: 11729258976783725}
-<<<<<<< HEAD
-=======
   - {fileID: 8146280052886021146}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_Father: {fileID: 11729257892191586}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -632,11 +591,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD
-  m_Sprite: {fileID: 21300000, guid: 78779edb73ff9fb408ff842dfa2757d0, type: 3}
-=======
   m_Sprite: {fileID: 21300000, guid: c7c085ca5a095b042a34f32500e40d87, type: 3}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -681,30 +636,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-<<<<<<< HEAD
-  m_Offset: {x: -0.014330983, y: 0.014331043}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2, y: 1.23}
-=======
   m_Offset: {x: -1.2704415, y: 3.267187}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 24.802656, y: 35.079998}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
     newSize: {x: 1.2, y: 1.23}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-<<<<<<< HEAD
-  m_Size: {x: 0.62676024, y: 1.2013379}
-=======
   m_Size: {x: 11.346929, y: 20.366215}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_EdgeRadius: 0
 --- !u!114 &11729258458038101
 MonoBehaviour:
@@ -723,8 +666,6 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-<<<<<<< HEAD
-=======
   pState: {fileID: 3561411235425532282}
   pHealth: {fileID: 11729258458038094}
   healTimer: 0
@@ -732,7 +673,6 @@ MonoBehaviour:
   mana: 2
   manaDrainSpeed: 0.2
   manaBar: {fileID: 1108956139}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!114 &11729258458038094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,8 +688,6 @@ MonoBehaviour:
   health: 100
   maxHealth: 100
   healthBar: {fileID: 11729257315121881}
-<<<<<<< HEAD
-=======
 --- !u!114 &3561411235425532282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,7 +703,6 @@ MonoBehaviour:
   jumping: 0
   healing: 0
   moving: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &11729258976783724
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,11 +728,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11729258976783724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: -1, y: 0.74, z: 0}
-=======
   m_LocalPosition: {x: -1, y: 14.7, z: 0}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -851,11 +784,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 11729257315121880}
-<<<<<<< HEAD
-=======
   - {fileID: 1108956138}
   - {fileID: 993742472}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_Father: {fileID: 11729257892191586}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -925,8 +855,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-<<<<<<< HEAD
-=======
 --- !u!1 &175417771269608378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,4 +1015,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d

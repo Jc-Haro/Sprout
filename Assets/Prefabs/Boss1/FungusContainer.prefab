@@ -101,10 +101,6 @@ MonoBehaviour:
   numberOfRounds: 3
   startShootingDelay: 0
   shootingRate: 0.5
-<<<<<<< HEAD
-  bulletRotation: 0
-=======
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!114 &3660410427417078666
 MonoBehaviour:
   m_ObjectHideFlags: 0

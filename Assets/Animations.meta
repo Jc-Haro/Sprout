@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Prefabs/Enemies.meta
-guid: f39edac1a0ecc58428f3eb0acde39d83
-========
 guid: e7bcb0819f85cef4e9100c1f8687c6f0
->>>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d:Assets/Animations.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -441,8 +441,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
-<<<<<<< HEAD
-=======
 --- !u!1 &140091467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1871,7 +1869,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &424418427
 GameObject:
   m_ObjectHideFlags: 0
@@ -1908,8 +1905,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &430908929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,7 +2157,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &462291535
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,10 +2188,6 @@ Transform:
   - {fileID: 839391974}
   - {fileID: 1262255680}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &475029621
@@ -2284,7 +2274,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &478669453
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,8 +2385,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
-<<<<<<< HEAD
-=======
 --- !u!1 &538625457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2650,7 +2637,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &562170621
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,8 +2768,6 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
-<<<<<<< HEAD
-=======
 --- !u!1 &566229778
 GameObject:
   m_ObjectHideFlags: 0
@@ -3204,7 +3188,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &616068542
 GameObject:
   m_ObjectHideFlags: 0
@@ -3336,8 +3319,6 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
-<<<<<<< HEAD
-=======
 --- !u!1 &618759607
 GameObject:
   m_ObjectHideFlags: 0
@@ -3422,7 +3403,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &643289522
 GameObject:
   m_ObjectHideFlags: 0
@@ -3529,8 +3509,6 @@ MonoBehaviour:
   minY: -5
   maxY: -5
   healProbability: 5
-<<<<<<< HEAD
-=======
 --- !u!1 &681829541
 GameObject:
   m_ObjectHideFlags: 0
@@ -3699,7 +3677,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &704619071
 GameObject:
   m_ObjectHideFlags: 0
@@ -3806,8 +3783,6 @@ MonoBehaviour:
   minY: -3.7
   maxY: 4.3
   healProbability: 5
-<<<<<<< HEAD
-=======
 --- !u!1 &795313979
 GameObject:
   m_ObjectHideFlags: 0
@@ -3976,7 +3951,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &839391973
 GameObject:
   m_ObjectHideFlags: 0
@@ -4088,8 +4062,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
 --- !u!1 &850940410
 GameObject:
   m_ObjectHideFlags: 0
@@ -4426,7 +4398,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &911232863
 GameObject:
   m_ObjectHideFlags: 0
@@ -4596,12 +4567,9 @@ Transform:
   - {fileID: 1429209125}
   - {fileID: 616068543}
   - {fileID: 1146580416}
-  - {fileID: 1121110221}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &1006201382
 GameObject:
   m_ObjectHideFlags: 0
@@ -5694,7 +5662,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &1121110220
 GameObject:
   m_ObjectHideFlags: 0
@@ -5720,21 +5687,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121110220}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 7.276243, y: -1.3724601, z: -0.6209996}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1000783629}
-  m_RootOrder: 10
-=======
   m_LocalPosition: {x: 5.637561, y: -0.038117766, z: -0.12887597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1121110222
 MonoBehaviour:
@@ -5753,10 +5711,7 @@ MonoBehaviour:
   rightSpawnPos: 20
   player: {fileID: 1391201185}
   bulletPrefab: {fileID: 8399775957163108644, guid: f829e781a8f32ec48b1937500327b9c5, type: 3}
-<<<<<<< HEAD
-=======
   repeatRate: 3
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &1144791230
 GameObject:
   m_ObjectHideFlags: 0
@@ -5994,8 +5949,6 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
-<<<<<<< HEAD
-=======
 --- !u!1 &1158848925
 GameObject:
   m_ObjectHideFlags: 0
@@ -6752,7 +6705,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &1262255679
 GameObject:
   m_ObjectHideFlags: 0
@@ -6864,8 +6816,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
 --- !u!1 &1283589920
 GameObject:
   m_ObjectHideFlags: 0
@@ -7118,7 +7068,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &1304521733
 GameObject:
   m_ObjectHideFlags: 0
@@ -7551,8 +7500,6 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
-<<<<<<< HEAD
-=======
 --- !u!1 &1334328162
 GameObject:
   m_ObjectHideFlags: 0
@@ -8057,14 +8004,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &1391201185 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 11729258458038100, guid: 8218d8ecf74367d45ba5c1cb6b351047, type: 3}
   m_PrefabInstance: {fileID: 7536098475881599906}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &1393517264
 GameObject:
   m_ObjectHideFlags: 0
@@ -8737,7 +8681,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &1429209124
 GameObject:
   m_ObjectHideFlags: 0
@@ -8980,8 +8923,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
-<<<<<<< HEAD
-=======
 --- !u!1 &1435491136
 GameObject:
   m_ObjectHideFlags: 0
@@ -9066,7 +9007,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &1443749796
 GameObject:
   m_ObjectHideFlags: 0
@@ -9196,8 +9136,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &1448161655
 GameObject:
   m_ObjectHideFlags: 0
@@ -9282,7 +9220,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &1461486973
 GameObject:
   m_ObjectHideFlags: 0
@@ -9386,11 +9323,6 @@ MonoBehaviour:
   shootStart: 12
   minX: -8
   maxX: 13
-<<<<<<< HEAD
-  minY: 7
-  maxY: 7
-  healProbability: 5
-=======
   minY: 11
   maxY: 11
   healProbability: 5
@@ -9814,7 +9746,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &1517009825
 GameObject:
   m_ObjectHideFlags: 0
@@ -9939,11 +9870,7 @@ MonoBehaviour:
   speed: -5
   startMove: 0
   bossPhase2Attack: {fileID: 1517009828}
-<<<<<<< HEAD
-  bossHP: 75
-=======
   bossHP: 150
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
   nextLevelPortal: {fileID: 109831711}
   preciseShoot: {fileID: 1121110220}
 --- !u!61 &1517009830
@@ -9986,8 +9913,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pHealth: {fileID: 0}
   damage: 20
-<<<<<<< HEAD
-=======
 --- !u!1 &1535276458
 GameObject:
   m_ObjectHideFlags: 0
@@ -10072,7 +9997,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &1560105542
 GameObject:
   m_ObjectHideFlags: 0
@@ -10179,8 +10103,6 @@ MonoBehaviour:
   minY: -3.7
   maxY: 4.3
   healProbability: 5
-<<<<<<< HEAD
-=======
 --- !u!1 &1563859788
 GameObject:
   m_ObjectHideFlags: 0
@@ -11556,7 +11478,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &1747508203
 GameObject:
   m_ObjectHideFlags: 0
@@ -11690,8 +11611,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
 --- !u!1 &1763897087
 GameObject:
   m_ObjectHideFlags: 0
@@ -12364,7 +12283,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1 &1853172615
 GameObject:
   m_ObjectHideFlags: 0
@@ -12515,14 +12433,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawners: {fileID: 424418427}
   phase2Damage: {fileID: 1517009830}
-<<<<<<< HEAD
-  wallHp: 50
-  phase2: {fileID: 1517009829}
-=======
   wallHp: 100
   phase2: {fileID: 1517009829}
   preciseShoot: {fileID: 1121110222}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!114 &1853172622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12537,8 +12450,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pHealth: {fileID: 0}
   damage: 20
-<<<<<<< HEAD
-=======
 --- !u!1 &1872192455
 GameObject:
   m_ObjectHideFlags: 0
@@ -13715,7 +13626,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
 --- !u!1001 &2730851483786867003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13723,13 +13633,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< HEAD
-=======
     - target: {fileID: 3230830324743510637, guid: 80078f01e2ee6b3419b68e6cd34297a8, type: 3}
       propertyPath: sceneToLoad
       value: MainMenu
       objectReference: {fileID: 0}
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
     - target: {fileID: 3767595537840905219, guid: 80078f01e2ee6b3419b68e6cd34297a8, type: 3}
       propertyPath: m_Name
       value: LevelChangePortal

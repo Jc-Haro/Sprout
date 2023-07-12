@@ -25,8 +25,6 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-<<<<<<< HEAD
-=======
         }
         if (healthBar.fillAmount >= 0.60)
         {
@@ -39,7 +37,6 @@ public class PlayerHealth : MonoBehaviour
         else
         {
             healthBar.color = Color.red;
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
         }
     }
 

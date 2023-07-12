@@ -22,10 +22,7 @@ public class DefensiveWall : MonoBehaviour
                 Destroy(spawners.gameObject);
                 phase2.enabled = true;
                 phase2Damage.enabled = true;
-<<<<<<< HEAD
-=======
                 preciseShoot.repeatRate = 2.0f;
->>>>>>> 5c1f9cfd12306acbe2fbae56078c458c1d844a6d
                 gameObject.SetActive(false);
 
             }
