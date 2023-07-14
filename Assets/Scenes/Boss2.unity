@@ -3188,21 +3188,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pHealth: {fileID: 0}
   damage: 10
---- !u!4 &11729257575356325 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3395814188663373135, guid: f03c1fb940750184b91fe5beec809990, type: 3}
-  m_PrefabInstance: {fileID: 3389504841091967722}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &11729257575356327 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 3395814188663373133, guid: f03c1fb940750184b91fe5beec809990, type: 3}
-  m_PrefabInstance: {fileID: 3389504841091967722}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &11729257575356344 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3395814188663373138, guid: f03c1fb940750184b91fe5beec809990, type: 3}
-  m_PrefabInstance: {fileID: 3389504841091967722}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3389504841091967722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3210,26 +3195,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3389504841551622764, guid: f03c1fb940750184b91fe5beec809990, type: 3}
-      propertyPath: gunHolder
-      value: 
-      objectReference: {fileID: 11729257575356325}
-    - target: {fileID: 3389504841551622764, guid: f03c1fb940750184b91fe5beec809990, type: 3}
-      propertyPath: m_rigidbody
-      value: 
-      objectReference: {fileID: 11729257575356327}
-    - target: {fileID: 3389504841551622764, guid: f03c1fb940750184b91fe5beec809990, type: 3}
-      propertyPath: grappleToAll
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3389504841551622764, guid: f03c1fb940750184b91fe5beec809990, type: 3}
-      propertyPath: m_springJoint2D
-      value: 
-      objectReference: {fileID: 3561411234811285911}
-    - target: {fileID: 3389504841551622764, guid: f03c1fb940750184b91fe5beec809990, type: 3}
-      propertyPath: grappableLayerNumber
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 3395814188142616420, guid: f03c1fb940750184b91fe5beec809990, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3280,26 +3245,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f03c1fb940750184b91fe5beec809990, type: 3}
---- !u!231 &3561411234811285911
-SpringJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 11729257575356344}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 1
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 25.644835
-  m_DampingRatio: 0
-  m_Frequency: 1
 --- !u!1001 &5692065532845369686
 PrefabInstance:
   m_ObjectHideFlags: 0

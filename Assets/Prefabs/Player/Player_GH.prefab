@@ -654,14 +654,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grappleRope: {fileID: 3389504841859236096}
-  grappleToAll: 1
-  grappableLayerNumber: 8
+  grappleToAll: 0
+  grappableLayerNumber: 11
   m_camera: {fileID: 3389504840816769429}
-  gunHolder: {fileID: 0}
+  gunHolder: {fileID: 3395814188663373135}
   gunPivot: {fileID: 3389504841669377864}
   firePoint: {fileID: 3389504841681112770}
-  m_springJoint2D: {fileID: 0}
-  m_rigidbody: {fileID: 0}
+  m_springJoint2D: {fileID: 3561411234811285911}
+  m_rigidbody: {fileID: 3395814188663373133}
   rotateOverTime: 0
   rotationSpeed: 4
   hasMaxDistance: 0
@@ -1157,6 +1157,7 @@ GameObject:
   - component: {fileID: 3395814188663373139}
   - component: {fileID: 3395814188663373128}
   - component: {fileID: 2190258051125345148}
+  - component: {fileID: 3561411234811285911}
   m_Layer: 8
   m_Name: PlayerSprite
   m_TagString: Player
@@ -1340,6 +1341,26 @@ MonoBehaviour:
   jumping: 0
   healing: 0
   moving: 0
+--- !u!231 &3561411234811285911
+SpringJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3395814188663373138}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 1
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 25.644835
+  m_DampingRatio: 0
+  m_Frequency: 1
 --- !u!1 &3395814188701910368
 GameObject:
   m_ObjectHideFlags: 0
