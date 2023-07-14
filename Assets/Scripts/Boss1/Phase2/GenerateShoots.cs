@@ -15,6 +15,7 @@ public class GenerateShoots : MonoBehaviour
     public int numberOfRounds = 3;
     [SerializeField] float startShootingDelay = 0.5f;
     [SerializeField] float shootingRate = 0.5f;
+    [SerializeField] float bulletRotation = 0;
 
     public void GenerateBullets()
     {
@@ -64,6 +65,7 @@ public class GenerateShoots : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        offset -= bulletRotation;
 
     }
 

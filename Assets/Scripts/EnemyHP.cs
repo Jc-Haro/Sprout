@@ -11,6 +11,7 @@ public class EnemyHP : MonoBehaviour
         if (collision.CompareTag("PlayerBullet"))
         {
             totalHP--;
+            Destroy(collision.gameObject);
             if (totalHP < 1)
             {
                 Destroy(gameObject);

@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
 public class PlayerMovement : MonoBehaviour
@@ -6,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private float speed = 8f;
     private float jumpingPower = 22f;
     private bool isFacingRight = true;
+    public int invincibleTime;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -22,11 +25,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float manaDrainSpeed;
     public Image manaBar;
 
+    public GameObject sprite;
+    public SpriteRenderer playerSprite;
+    
     private void Start()
     {
         Mana = mana;
     }
-
     void Update()
     {
         manaBar.fillAmount = Mathf.Clamp(Mana / maxMana, 0, 1);
@@ -48,9 +53,6 @@ public class PlayerMovement : MonoBehaviour
         {
             Mana += manaPerSecond * Time.deltaTime;
         }
-       
-
-
         Flip();
         Heal();
     }
@@ -70,14 +72,14 @@ public class PlayerMovement : MonoBehaviour
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
         {
             isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
+            Vector3 localScale = sprite.transform.localScale;
             localScale.x *= -1f;
             
-            transform.localScale = localScale;
+            sprite.transform.localScale = localScale;
         }
     }
 
-    float Mana
+    float Mana 
     {
         get { return mana; }
         set
@@ -93,14 +95,14 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift) && pHealth.health < pHealth.maxHealth && Mana > 0 && !pState.jumping && !pState.moving)
         {
-
+            
             pState.healing = true;
-
+            
             //healing
             healTimer += Time.deltaTime;
-            if (healTimer >= timeToHeal)
+            if(healTimer >= timeToHeal)
             {
-
+                
                 pHealth.health = pHealth.health + 5;
                 healTimer = 0;
             }
@@ -112,5 +114,22 @@ public class PlayerMovement : MonoBehaviour
             pState.healing = false;
             healTimer = 0;
         }
+    }
+
+    public void Invincible()
+    {
+        StartCoroutine(InvincibilityTime());   
+    }
+
+    IEnumerator InvincibilityTime()
+    {
+        Color tansparency = playerSprite.color;
+        tansparency.a = 0.5f;
+        playerSprite.color = tansparency;
+        gameObject.tag = "InvPlayer";
+        yield return new WaitForSeconds(invincibleTime);
+        tansparency.a = 1.0f;
+        playerSprite.color = tansparency;
+        gameObject.tag = "Player";
     }
 }

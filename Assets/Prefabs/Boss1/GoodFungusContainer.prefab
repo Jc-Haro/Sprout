@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 7793148941850111582}
   - component: {fileID: 2089230095219580433}
   - component: {fileID: 9194807453164963826}
+  - component: {fileID: -1174392380630673112}
   m_Layer: 0
   m_Name: GoodFungusContainer
   m_TagString: Fungus
@@ -313,6 +314,7 @@ MonoBehaviour:
   numberOfRounds: 3
   startShootingDelay: 0
   shootingRate: 0.5
+  bulletRotation: 0
 --- !u!114 &9194807453164963826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,6 +335,20 @@ MonoBehaviour:
   actualPhase: 0
   bulletSpawn: {fileID: 2089230095219580433}
   fallSpeed: 9.81
+--- !u!114 &-1174392380630673112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6788106870172295591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf2b6719bab07040bb7f0c6c1d29be6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pHealth: {fileID: 0}
+  heal: 20
 --- !u!1 &6788106870685746746
 GameObject:
   m_ObjectHideFlags: 0

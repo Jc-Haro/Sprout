@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2409483965153428006}
   - component: {fileID: 5884103518566609513}
   - component: {fileID: 3660410427417078666}
+  - component: {fileID: -8629026002551361125}
   m_Layer: 0
   m_Name: FungusContainer
   m_TagString: Fungus
@@ -101,6 +102,7 @@ MonoBehaviour:
   numberOfRounds: 3
   startShootingDelay: 0
   shootingRate: 0.5
+  bulletRotation: 0
 --- !u!114 &3660410427417078666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +123,20 @@ MonoBehaviour:
   actualPhase: 0
   bulletSpawn: {fileID: 5884103518566609513}
   fallSpeed: 9.81
+--- !u!114 &-8629026002551361125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396912418454867423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66977efa2c4197444b1ace0e97df456d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pHealth: {fileID: 0}
+  damage: 30
 --- !u!1 &1396912419033016898
 GameObject:
   m_ObjectHideFlags: 0
