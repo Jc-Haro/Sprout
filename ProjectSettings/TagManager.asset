@@ -15,6 +15,7 @@ TagManager:
   - PlayerFocus
   - Enemy
   - InvPlayer
+  - Teleporter
   layers:
   - Default
   - TransparentFX
