@@ -1,15 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
     public float health;
     public float maxHealth;
     public Image healthBar;
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -33,11 +32,10 @@ public class PlayerHealth : MonoBehaviour
         else if (healthBar.fillAmount >= 0.4)
         {
             healthBar.color = new Color(1, 0.4f, 0.07f, 1); //105 255
-        }
+    }
         else
         {
             healthBar.color = Color.red;
         }
     }
-
 }

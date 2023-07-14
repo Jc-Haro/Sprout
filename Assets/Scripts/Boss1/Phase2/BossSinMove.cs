@@ -17,6 +17,8 @@ public class BossSinMove : MonoBehaviour
     public int bossHP;
     [SerializeField] private GameObject nextLevelPortal;
     [SerializeField] private GameObject preciseShoot;
+    [SerializeField] private HealthBar bossHb;
+    [SerializeField] private GameObject bossUI;
 
     // Start is called before the first frame update
     void Start()
@@ -71,8 +73,10 @@ public class BossSinMove : MonoBehaviour
         {
             Destroy(collision.gameObject);
             bossHP -= 1;
+            bossHb.health = bossHP;
             if (bossHP <= 0)
             {
+                bossUI.SetActive(false);
                 Destroy(preciseShoot);
                 nextLevelPortal.SetActive(true);
                 Destroy(gameObject);

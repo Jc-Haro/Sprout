@@ -11,12 +11,9 @@ public class Damage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (collision.gameObject.CompareTag("Player"))
-            {
+            collision.gameObject.GetComponent<PlayerMovement>().Invincible();
                 pHealth = collision.gameObject.GetComponent<PlayerHealth>();
-                pHealth.health -= damage;
-        
-            }
+            pHealth.health -= damage;   
         }
     }
 
@@ -24,10 +21,12 @@ public class Damage : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Player"))
             {
+                collision.gameObject.GetComponent<PlayerMovement>().Invincible();
                 pHealth = collision.gameObject.GetComponent<PlayerHealth>();
                 pHealth.health -= damage;
                
             }
         }
-    
+        
+ 
 }

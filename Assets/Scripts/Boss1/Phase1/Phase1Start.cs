@@ -10,9 +10,18 @@ public class Phase1Start : MonoBehaviour
     [SerializeField] private GameObject preciseShoot;
     GameObject playerCam;
     public GameObject mainCam;
+    [SerializeField] private GameObject bossUI;
+    [SerializeField] private HealthBar bossHB;
+    float maxWallHP;
+
     // Start is called before the first frame update
 
- 
+    private void Start()
+    {
+        maxWallHP = FindObjectOfType<DefensiveWall>().WallHP;
+        bossHB.maxHealth = maxWallHP;
+        bossHB.health = maxWallHP;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,6 +29,7 @@ public class Phase1Start : MonoBehaviour
      
         if (collision.gameObject.CompareTag("Player"))
         {
+            bossUI.SetActive(true);
             limitWalls.SetActive(true);
             spawners.SetActive(true);
             defensiveWall.SetActive(true);

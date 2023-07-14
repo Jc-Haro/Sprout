@@ -9,10 +9,10 @@ public class Heal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("InvPlayer"))
         {
             pHealth = collision.gameObject.GetComponent<PlayerHealth>();
-            pHealth.health += pHealth.health + heal <= pHealth.maxHealth ? heal : 0;
+            pHealth.health += pHealth.health + heal <= pHealth.maxHealth ? heal : pHealth.maxHealth-pHealth.health<heal ? pHealth.maxHealth - pHealth.health : 0;
            
             Destroy(gameObject);
         }

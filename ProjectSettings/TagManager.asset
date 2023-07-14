@@ -14,6 +14,7 @@ TagManager:
   - PlayerCamera
   - PlayerFocus
   - Enemy
+  - InvPlayer
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - Player
   - 
   - 
-  - 
+  - GrapplingPoint
   - 
   - 
   - 
