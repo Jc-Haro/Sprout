@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+
 public class LevelManager : MonoBehaviour
 {
     public string level1;
     public string level2;
     public string controls;
+   
+   
 
     // Start is called before the first frame update
     void Start()
@@ -35,4 +39,11 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene(controls);
     }
+
+    public void Close()
+    {
+
+    }
+
+    
 }
