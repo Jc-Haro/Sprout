@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Boss2_TP : MonoBehaviour
 {
-
+    public AudioSource TeleportingSound;
     [SerializeField] private GameObject[] teleportPositions;
     [SerializeField] private GameObject[] platformPositions;
     [SerializeField] Color color;
@@ -43,7 +43,7 @@ public class Boss2_TP : MonoBehaviour
     {
         int randomIndex = Random.Range(0, teleportPositions.Length);
         Vector2 aux;
-
+        TeleportingSound.Play();
         aux = transform.position;
         transform.position = teleportPositions[randomIndex].transform.position;
         teleportPositions[randomIndex].transform.position = aux;

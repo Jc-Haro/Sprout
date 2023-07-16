@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Phase1Start : MonoBehaviour
 {
+    public AudioSource BossStartSound;
     [SerializeField] private GameObject limitWalls;
     [SerializeField] private GameObject spawners;
     [SerializeField] private GameObject defensiveWall;
@@ -25,6 +26,7 @@ public class Phase1Start : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         playerCam = GameObject.FindGameObjectWithTag("PlayerCamera");
      
         if (collision.gameObject.CompareTag("Player"))
@@ -35,6 +37,7 @@ public class Phase1Start : MonoBehaviour
             defensiveWall.SetActive(true);
             preciseShoot.SetActive(true);
             mainCam.SetActive(true);
+            BossStartSound.Play();
             playerCam.SetActive(false);
             Destroy(gameObject);
         }

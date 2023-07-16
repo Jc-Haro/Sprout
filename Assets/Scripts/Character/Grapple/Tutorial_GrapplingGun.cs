@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Tutorial_GrapplingGun : MonoBehaviour
 {
+    public AudioSource GrappleSoundEffect;
+    public AudioSource GrappleOnBossFight;
     [Header("Scripts Ref:")]
     public Tutorial_GrapplingRope grappleRope;
 
@@ -121,6 +123,9 @@ public class Tutorial_GrapplingGun : MonoBehaviour
             {
                 if (Vector2.Distance(_hit.point, firePoint.position) <= maxDistnace || !hasMaxDistance)
                 {
+                    //Sound Goes Here?? Maybe??
+                    GrappleSoundEffect.Play();
+                    GrappleOnBossFight.Play();
                     grapplePoint = _hit.point;
                     grappleDistanceVector = grapplePoint - (Vector2)gunPivot.position;
                     grappleRope.enabled = true;

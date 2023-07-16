@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossSinMove : MonoBehaviour
 {
+    public AudioSource Phase2StartSound;
     [SerializeField] private float speed;
     private float sinCenterYPos;
     private float amplitude = 1.0f;
@@ -23,6 +24,7 @@ public class BossSinMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Phase2StartSound.Play();
         sinCenterYPos = 6;
         bossPhase2Attack.enabled = true;
     }
@@ -38,6 +40,7 @@ public class BossSinMove : MonoBehaviour
         }
         else
         {
+            
             startMove = true;
             Vector2 pos = transform.position;
 

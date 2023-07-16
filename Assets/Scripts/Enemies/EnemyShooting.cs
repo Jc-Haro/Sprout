@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour
 {
-
+    public AudioSource TurretBulletShot;
     public GameObject bullet;
     public Transform bulletPos;
 
@@ -26,14 +26,15 @@ public class EnemyShooting : MonoBehaviour
         float distance = Vector2.Distance(transform.position, player.transform.position);
         Debug.Log(distance);
 
-        if (distance<6)
+        if (distance<12)
         {
             timer += Time.deltaTime;
 
-            if (timer > 2)
+            if (timer > 1)
             {
                 timer = 0;
                 shoot();
+               
             }
         }
 
@@ -42,9 +43,9 @@ public class EnemyShooting : MonoBehaviour
 
     void shoot()
     {
-
+        TurretBulletShot.Play();
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
-
+        
 
     }
 }

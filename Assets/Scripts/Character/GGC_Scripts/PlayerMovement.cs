@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PlayerMovement : MonoBehaviour
 {
+    public AudioSource HealingSound;
+    public AudioSource HealingOnBossArena;
     private float horizontal;
     private float speed = 8f;
     private float jumpingPower = 22f;
@@ -102,8 +104,10 @@ public class PlayerMovement : MonoBehaviour
             healTimer += Time.deltaTime;
             if(healTimer >= timeToHeal)
             {
-                
+                HealingSound.Play();
+                HealingOnBossArena.Play();
                 pHealth.health = pHealth.health + 5;
+                Debug.Log("Shoulve healed");
                 healTimer = 0;
             }
             //drain mana

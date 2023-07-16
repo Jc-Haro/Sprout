@@ -5,6 +5,8 @@ using UnityEngine.EventSystems;
 
 public class Shooting : MonoBehaviour
 {
+    public AudioSource ShootingSoundPlayer;
+    public AudioSource ShootingWhileOnBossArena;
     private Camera mainCam;
     private Vector3 mousePos;
     public GameObject bullet;
@@ -45,6 +47,8 @@ public class Shooting : MonoBehaviour
         {
             //if (EventSystem.current.IsPointerOverGameObject()) { return;  }
             canFire = false;
+            ShootingSoundPlayer.Play();
+            ShootingWhileOnBossArena.Play();
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
         }
     }
