@@ -9,7 +9,7 @@ public class LevelManager : MonoBehaviour
 {
     public AudioSource ButtonSelectSound;
     public string level1;
-    public string level2;
+    public string MainMenu;
     public string controls;
    
    
@@ -36,7 +36,7 @@ public class LevelManager : MonoBehaviour
     public void Level2()
     {
         ButtonSelectSound.Play();
-        SceneManager.LoadScene(level2);
+        SceneManager.LoadScene(MainMenu);
     }
 
     public void Controls()
