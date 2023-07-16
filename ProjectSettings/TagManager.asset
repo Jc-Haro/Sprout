@@ -16,6 +16,7 @@ TagManager:
   - Enemy
   - InvPlayer
   - Teleporter
+  - PauseMenu
   layers:
   - Default
   - TransparentFX

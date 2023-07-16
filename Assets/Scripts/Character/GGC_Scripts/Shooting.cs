@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Shooting : MonoBehaviour
 {
@@ -42,6 +43,7 @@ public class Shooting : MonoBehaviour
         }
         if(Input.GetMouseButton(0) && canFire)
         {
+            //if (EventSystem.current.IsPointerOverGameObject()) { return;  }
             canFire = false;
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
         }

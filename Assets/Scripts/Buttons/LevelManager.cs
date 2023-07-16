@@ -28,6 +28,7 @@ public class LevelManager : MonoBehaviour
     public void Level1()
     {
         SceneManager.LoadScene(level1);
+
     }
 
     public void Level2()
@@ -42,7 +43,8 @@ public class LevelManager : MonoBehaviour
 
     public void Close()
     {
-
+        Application.Quit();
+        
     }
 
     
