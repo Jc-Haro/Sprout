@@ -11,6 +11,8 @@ public class RobotEnemy : MonoBehaviour
     private float targetPositionX; // The target X position of the object
     private bool movingRight = true; // Flag to track the direction of movement
 
+    [SerializeField] private GameObject sprite;
+
     private void Start()
     {
         targetPositionX = transform.position.x + distance; // Calculate the target X position
@@ -30,6 +32,9 @@ public class RobotEnemy : MonoBehaviour
         {
             // Reverse the movement direction
             movingRight = !movingRight;
+            Quaternion flipSprite = sprite.transform.rotation;
+            flipSprite.y = movingRight ? 180 : 0;
+            sprite.transform.rotation = flipSprite;
 
             // Update the target position
             targetPositionX = movingRight ? transform.position.x + distance : transform.position.x - distance;

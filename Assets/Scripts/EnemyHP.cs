@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class EnemyHP : MonoBehaviour
 {
-    [SerializeField] int totalHP;
+    [SerializeField] float maxHP;
+    private float actualHP;
+    [SerializeField] private EnemyWorldHealthBar enemyHB;
     // Start is called before the first frame update
+    private void Start()
+    {
+        actualHP = maxHP;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("PlayerBullet"))
         {
-            totalHP--;
             Destroy(collision.gameObject);
-            if (totalHP < 1)
+            actualHP--;
+            enemyHB.UpdateHealth(actualHP, maxHP);
+            if (actualHP < 1)
             {
                 Destroy(gameObject);
             }

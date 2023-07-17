@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1eae82211fb58c64b93c6f14ff7d2608
+guid: 99b12938cb31397439c765845bfceea2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SproutCaminatasprite_0
+      name: defbf848-0da3-4987-940a-d12d7a446cd8-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 657
-        y: 1058
-        width: 997
-        height: 2033
+        x: 88
+        y: 78
+        width: 133
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a83eefd47b85c04f814b9239344f3d8
-      internalID: 1619038907
+      spriteID: 4d202bf9c33f3f742ac319775a3a3143
+      internalID: 975922519
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SproutCaminatasprite_0: 1619038907
+      defbf848-0da3-4987-940a-d12d7a446cd8-removebg-preview_0: 975922519
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

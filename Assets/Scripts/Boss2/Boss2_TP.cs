@@ -65,7 +65,7 @@ public class Boss2_TP : MonoBehaviour
         }
         
     } 
-    void TurnOn_Platforms()
+    public void TurnOn_Platforms()
     {
 
         for (int i = 0; i < platformPositions.Length; i++)
@@ -81,7 +81,7 @@ public class Boss2_TP : MonoBehaviour
     void SwitchActivePlatforms()
     {
        
-        if (platformChanges > 2)
+        if (platformChanges > 2 && maxUnactivePlatforms<3)
         {
             maxUnactivePlatforms++;
             platformChanges = 0;

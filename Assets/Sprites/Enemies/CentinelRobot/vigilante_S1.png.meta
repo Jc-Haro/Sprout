@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 03d704b443d624e40997b861d232f404
+guid: c76778171f6a9714a9e3d98f14f5b747
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -101,26 +101,38 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Torreta_0
+      name: vigilante_S1_0
       rect:
         serializedVersion: 2
-        x: 151
-        y: 588
-        width: 940
-        height: 351
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 725
+        y: 35
+        width: 856
+        height: 1021
+      alignment: 9
+      pivot: {x: 0.41473246, y: 0.51610446}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2714d9d30b9bb3469c337a9c95e1b56
-      internalID: 344144893
+      spriteID: b5c538e8b07e17740b1e202342510fad
+      internalID: -377823744
       vertices: []
       indices: 
       edges: []
@@ -136,7 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Torreta_0: 344144893
+      vigilante_S1_0: -377823744
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1eae82211fb58c64b93c6f14ff7d2608
+guid: c9ab2ac1eedc166479fa0225bb064dcc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,22 +117,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SproutCaminatasprite_0
+      name: vigilante_S2_0
       rect:
         serializedVersion: 2
-        x: 657
-        y: 1058
-        width: 997
-        height: 2033
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 822
+        y: 35
+        width: 759
+        height: 1021
+      alignment: 9
+      pivot: {x: 0.3394542, y: 0.5168609}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a83eefd47b85c04f814b9239344f3d8
-      internalID: 1619038907
+      spriteID: ce34d8a1f1505514fb4fd97694fc37f5
+      internalID: -265233135
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SproutCaminatasprite_0: 1619038907
+      vigilante_S2_0: -265233135
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

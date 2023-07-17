@@ -7,6 +7,7 @@ public class BossHP : MonoBehaviour
     [SerializeField] private HealthBar bossHp;
     [SerializeField] private int bossHitPoints;
     [SerializeField] private Boss2_trigger bossManager;
+    [SerializeField] private Boss2_TP tp;
 
     private void Start()
     {
@@ -23,6 +24,8 @@ public class BossHP : MonoBehaviour
             {
                 bossManager.ActivateOnEnd();
                 bossManager.DeactivateOnEnd();
+                tp.StopAllCoroutines();
+                tp.TurnOn_Platforms();
                 Destroy(gameObject);
             }
         }

@@ -29,6 +29,9 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject sprite;
     public SpriteRenderer playerSprite;
+
+    private bool isGrounded = false;
+
     
     private void Start()
     {
@@ -39,8 +42,10 @@ public class PlayerMovement : MonoBehaviour
         manaBar.fillAmount = Mathf.Clamp(Mana / maxMana, 0, 1);
         horizontal = Input.GetAxisRaw("Horizontal");
         pState.moving = horizontal != 0;
+        isGrounded = IsGrounded();
+        pState.jumping = !isGrounded;
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             pState.jumping = true;
@@ -48,8 +53,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
+         
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-            pState.jumping = false;
         }
         if (mana < maxMana && !Input.GetKey(KeyCode.LeftShift))
         {
