@@ -32,6 +32,11 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isGrounded = false;
 
+    [SerializeField] private GameObject healingSprite;
+
+    [SerializeField] Sprite sproutJump;
+    [SerializeField] Sprite sproutStanding;
+    [SerializeField] Sprite sproutWalking;
     
     private void Start()
     {
@@ -49,11 +54,12 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             pState.jumping = true;
-        }
 
+        }
+        SpriteState();
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
-         
+
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
         if (mana < maxMana && !Input.GetKey(KeyCode.LeftShift))
@@ -62,6 +68,22 @@ public class PlayerMovement : MonoBehaviour
         }
         Flip();
         Heal();
+    }
+
+    private void SpriteState()
+    {
+        if (pState.jumping)
+        {
+            playerSprite.sprite = sproutJump;
+        }
+        else if (pState.moving)
+        {
+            playerSprite.sprite = sproutWalking;
+        }
+        else
+        {
+            playerSprite.sprite = sproutStanding;
+        }
     }
 
     private void FixedUpdate()
@@ -104,7 +126,8 @@ public class PlayerMovement : MonoBehaviour
         {
             
             pState.healing = true;
-            
+            healingSprite.SetActive(true);
+
             //healing
             healTimer += Time.deltaTime;
             if(healTimer >= timeToHeal)
@@ -121,6 +144,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             pState.healing = false;
+            healingSprite.SetActive(false);
             healTimer = 0;
         }
     }

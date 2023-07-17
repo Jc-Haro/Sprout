@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
    
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject volume;
 
 
 
@@ -40,6 +41,6 @@ public class PauseMenu : MonoBehaviour
     }
      public void Option()
     {
-        Debug.Log("Activate options");
+        volume.SetActive(!volume.activeInHierarchy);
     }
 }

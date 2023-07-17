@@ -14,6 +14,8 @@ public class Shooting : MonoBehaviour
     public bool canFire;
     private float timer;
     public float timeBetweenFiring;
+    [SerializeField] private GameObject shootSprite;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,11 +47,19 @@ public class Shooting : MonoBehaviour
         }
         if(Input.GetMouseButton(0) && canFire)
         {
+
             //if (EventSystem.current.IsPointerOverGameObject()) { return;  }
+            shootSprite.SetActive(true);
             canFire = false;
             ShootingSoundPlayer.Play();
             ShootingWhileOnBossArena.Play();
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
         }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            shootSprite.SetActive(false);
+        }
     }
+
+ 
 }
