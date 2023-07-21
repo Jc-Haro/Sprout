@@ -597,7 +597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1817767423927866864, guid: 28d720b43eb17404eab55fa13cd2ff63, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.83990836
       objectReference: {fileID: 0}
     - target: {fileID: 1817767423927866864, guid: 28d720b43eb17404eab55fa13cd2ff63, type: 3}
       propertyPath: m_LocalRotation.x
@@ -609,7 +609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1817767423927866864, guid: 28d720b43eb17404eab55fa13cd2ff63, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.5427283
       objectReference: {fileID: 0}
     - target: {fileID: 1817767423927866864, guid: 28d720b43eb17404eab55fa13cd2ff63, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -621,12 +621,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1817767423927866864, guid: 28d720b43eb17404eab55fa13cd2ff63, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -65.739
       objectReference: {fileID: 0}
     - target: {fileID: 1817767423927866879, guid: 28d720b43eb17404eab55fa13cd2ff63, type: 3}
       propertyPath: m_Name
       value: TorretaSuperior
       objectReference: {fileID: 0}
+    - target: {fileID: 8529102654426871139, guid: 28d720b43eb17404eab55fa13cd2ff63, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 6195623720436479391, guid: 93a9ede56cd31704e95590fba14c152a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28d720b43eb17404eab55fa13cd2ff63, type: 3}
 --- !u!4 &2568526644655689189 stripped

@@ -38,4 +38,17 @@ public class PlayerHealth : MonoBehaviour
             healthBar.color = Color.red;
         }
     }
+
+    public AudioClip[] damageSounds;
+    public AudioClip healSound;
+    public AudioSource audioSource;
+    public void DamageSound()
+    {
+        int randomIndex = Random.Range(0, damageSounds.Length);
+        audioSource.PlayOneShot(damageSounds[randomIndex]);
+    }
+    public void HealSound()
+    {
+        audioSource.PlayOneShot(healSound);
+    }
 }

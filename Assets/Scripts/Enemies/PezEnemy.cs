@@ -52,7 +52,7 @@ public class PezEnemy : MonoBehaviour
             }
 
             // Return to the ground
-            transform.position = new Vector3(transform.position.x, initialPosition.y, transform.position.z);
+            Destroy(gameObject);
         }
     }
 
